@@ -1,17 +1,16 @@
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
-import Kategori from './components/Kategori';
-import Footer from './components/footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Kategori from './KatalogTanaman/Kategori';
+import DetailKategori from './KatalogTanaman/DetailKategori'; // Pastikan path file benar
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Header/>
-      <Kategori/>
-      <Footer/>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Kategori />} />
+        <Route path="/kategori/:id" element={<DetailKategori />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
