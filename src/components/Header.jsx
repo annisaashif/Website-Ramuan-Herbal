@@ -3,7 +3,7 @@ import Logo2 from "../assets/logo2.png";
 
 function Header() {
   return (
-    <div>
+    <>
       <div
         className="relative" 
         style={{ height: '450px', // Mengatur tinggi menjadi 300 piksel
@@ -30,7 +30,7 @@ function Header() {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
