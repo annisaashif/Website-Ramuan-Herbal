@@ -1,0 +1,30 @@
+.slider-container {
+    width: 800px; 
+    margin: 0 auto;
+    padding: 0; 
+  }
+  
+  .slide {
+    max-width: 300px; 
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
+  }
+  
+  .slide img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+  }
+  
+  .overlay {
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px; 
+    
+  }
+  
