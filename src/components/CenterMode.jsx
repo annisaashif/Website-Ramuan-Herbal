@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Cimage1 from "../assets/centerMode/Annisa.png";
 import Cimage2 from "../assets/centerMode/Aul.png";
 import Cimage3 from "../assets/centerMode/Priki.png";
+import Cimage4 from "../assets/centerMode/imran.png";
+import Cimage5 from "../assets/centerMode/lupi.png";
+import Cimage6 from "../assets/centerMode/akbar.png";
 import "./CenterMode.css";
 
 function CenterMode() {
@@ -28,28 +31,43 @@ function CenterMode() {
           <img src={Cimage1} alt="Annisa" />
           <div className="overlay">
             <h3>Annisa Ashifa</h3>
+            <p>Universitas Negeri Padang</p>
           </div>
         </div>
         <div className="slide">
           <img src={Cimage2} alt="Aul" />
           <div className="overlay">
             <h3>Aulia Ayun</h3>
+            <p>Universitas Brawijaya</p>
           </div>
         </div>
         <div className="slide">
           <img src={Cimage3} alt="Priki" />
           <div className="overlay">
             <h3>Priki Ahmad</h3>
+            <p>Universitas Andalas</p>
           </div>
         </div>
         <div className="slide">
-          <h3>4</h3>
+          <img src={Cimage4} alt="imran" />
+          <div className="overlay">
+            <h3>Raden Muh Imran Fatahilah</h3>
+            <p>Politeknik Negeri Sriwijaya</p>
+          </div>
         </div>
         <div className="slide">
-          <h3>5</h3>
+          <img src={Cimage5} alt="lupi" />
+          <div className="overlay">
+            <h3>Andi Luthfi Moh A</h3>
+            <p>Universitas Telkom Surabaya</p>
+          </div>
         </div>
         <div className="slide">
-          <h3>6</h3>
+          <img src={Cimage6} alt="akbar" />
+          <div className="overlay">
+            <h3>Akbar Palekori</h3>
+            <p>Universitas Telkom Bandung</p>
+          </div>
         </div>
       </Slider>
     </div>

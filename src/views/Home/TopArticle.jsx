@@ -1,3 +1,8 @@
+import toped1 from "../../assets/HomeImg/ed1.png";
+import toped2 from "../../assets/HomeImg/ed2.png";
+import toped3 from "../../assets/HomeImg/ed3.png";
+import toped4 from "../../assets/HomeImg/ed4.png";
+
 function TopArticle() {
   return (
     <section>
@@ -12,7 +17,7 @@ function TopArticle() {
         {/* Card 1 */}
         <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
           <img
-            src="https://placehold.co/250x250"
+            src={toped1}
             alt="Cover buku 100 Top Tanaman Obat"
             className="rounded-md w-[250px] h-[250px]"
           />
@@ -32,7 +37,7 @@ function TopArticle() {
         {/* Card 2 */}
         <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
           <img
-            src="https://placehold.co/250x250"
+            src={toped2}
             alt="Cover buku Vademekum Tanaman Obat"
             className="rounded-md w-[250px] h-[250px]"
           />
@@ -52,7 +57,7 @@ function TopArticle() {
         {/* Card 3 */}
         <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
           <img
-            src="https://placehold.co/250x250"
+            src={toped3}
             alt="Cover buku Formularium Ramuan Obat"
             className="rounded-md w-[250px] h-[250px]"
           />
@@ -71,7 +76,7 @@ function TopArticle() {
         {/* Card 4 */}
         <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
           <img
-            src="https://placehold.co/250x250"
+            src={toped4}
             alt="Cover buku Acuan Bahan Baku Obat"
             className="rounded-md w-[250px] h-[250px]"
           />
