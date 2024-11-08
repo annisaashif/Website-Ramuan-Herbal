@@ -25,7 +25,7 @@ export default Homepage;
 function MainPage() {
   return (
     <main className="bg-gray-100">
-      <section className="hero flex flex-col md:flex-row items-center justify-center py-20 px-10 space-y-10 md:space-y-0 md:space-x-10">
+      <section className="hero flex flex-col md:flex-row items-center justify-center py-12 px-10 space-y-10 md:space-y-0 md:space-x-10">
         <div className="hero-content text-center md:text-left ">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Jelajahi dan temukan rahasia
@@ -47,7 +47,7 @@ function MainPage() {
           <img src={Image4} alt="Image 4" className="rounded-md" />
         </div>
       </section>
-      <section className="about flex flex-col md:flex-row items-center justify-center py-20 px-10 space-y-10 md:space-y-0 md:space-x-10">
+      <section className="about flex flex-col md:flex-row items-center justify-center py-2 px-10 space-y-10 md:space-y-0 md:space-x-10">
         <div className="video-container relative flex-shrink-0 p-2">
           <div className="absolute top-0 left-0 w-20 h-2 bg-[#27481C] z-20"></div>
           <div className="absolute top-0 left-0 w-2 h-20 bg-[#27481C] z-20"></div>
