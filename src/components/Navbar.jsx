@@ -5,16 +5,17 @@ import User from "../assets/Profil.png";
 function Navbar() {
   return (
     <div>
-      <nav className="flex items-center justify-between p-4">
+   <nav className="bg-white py-2" style={{ boxShadow: '0 0px 6px rgba(0, 0, 0, 0.1)' }}>
+      <div className="container mx-auto flex items-center justify-between">
         <img src={Logo} alt="Logo" className="h-16 w-16" />
         <div className="flex space-x-8">
           <Link to="/" className="text-green-900 font-semibold">
             Beranda
           </Link>
-          <a href="#" className="text-green-900 font-semibold">
+          <Link to="/resep-ramuan" className="text-green-900 font-semibold">
             Resep Ramuan
-          </a>
-          <Link to="/Kategori" className="text-green-900 font-semibold">
+          </Link>
+          <Link to="/kategori" className="text-green-900 font-semibold">
             Katalog Tanaman
           </Link>
           <a href="#" className="text-green-900 font-semibold">
@@ -26,11 +27,13 @@ function Navbar() {
         </div>
         <img
           src={User}
-          alt="User  Profile"
+          alt="User Profile"
           className="h-12 w-12 rounded-full"
         />
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
+  
   );
 }
 

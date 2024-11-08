@@ -1,15 +1,29 @@
+import asam_lambung from "../assets/penyakit/asam_lambung.png";
+import diabetes from "../assets/penyakit/diabetes.png";
+import flu_batuk from "../assets/penyakit/flu_batuk.png";
+import diare from "../assets/penyakit/diare.png";
+import hipertensi from "../assets/penyakit/hipertensi.png";
+import infeksi from "../assets/penyakit/infeksi.png";
+import insomnia from "../assets/penyakit/insomnia.png";
+import kolestrol from "../assets/penyakit/kolestrol.png";
+import kulit from "../assets/penyakit/kulit.png";
+import malaria from "../assets/penyakit/malaria.png";
+
+
+
+
 const ResepTerpopuler = () => {
   const items = [
-    { title: "Flu dan Batuk", img: "https://placehold.co/300x200?text=Flu+dan+Batuk" },
-    { title: "Asam Lambung", img: "https://placehold.co/300x200?text=Asam+Lambung" },
-    { title: "Diare", img: "https://placehold.co/300x200?text=Diare" },
-    { title: "Hipertensi", img: "https://placehold.co/300x200?text=Hipertensi" },
-    { title: "Kolesterol Tinggi", img: "https://placehold.co/300x200?text=Kolesterol+Tinggi" },
-    { title: "Insomnia dan Stres", img: "https://placehold.co/300x200?text=Insomnia+dan+Stres" },
-    { title: "Infeksi Saluran Kemih", img: "https://placehold.co/300x200?text=Infeksi+Saluran+Kemih" },
-    { title: "Penyakit Kulit", img: "https://placehold.co/300x200?text=Penyakit+Kulit" },
-    { title: "Diabetes", img: "https://placehold.co/300x200?text=Diabetes" },
-    { title: "Malaria", img: "https://placehold.co/300x200?text=Malaria" }
+    { title: "Flu dan Batuk", img: flu_batuk },
+    { title: "Asam Lambung", img: asam_lambung },
+    { title: "Diare", img: diare },
+    { title: "Hipertensi", img: hipertensi },
+    { title: "Kolesterol Tinggi", img: kolestrol },
+    { title: "Insomnia dan Stres", img: insomnia },
+    { title: "Infeksi Saluran Kemih", img: infeksi },
+    { title: "Penyakit Kulit", img: kulit },
+    { title: "Diabetes", img: diabetes },
+    { title: "Malaria", img: malaria }
   ];
 
   return (
