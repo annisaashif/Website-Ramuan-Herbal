@@ -3,7 +3,7 @@ import Logo2 from "../assets/logo2.png";
 
 function Header() {
   return (
-    <div>
+    <>
       <div
         className="relative"
         style={{
@@ -31,7 +31,7 @@ function Header() {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

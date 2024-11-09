@@ -70,7 +70,7 @@ function Navbar() {
             Beranda
           </NavLink>
           <NavLink
-            to="/Resep"
+            to="/resep-ramuan"
             className={({ isActive }) =>
               isActive
                 ? "bg-[#27481C] text-white font-semibold p-2 rounded"
@@ -190,7 +190,7 @@ function Navbar() {
             transition={{ delay: 0.2, duration: 0.3 }}
           >
             <a
-              href="/"
+              href="/resep-ramuan"
               className="text-gray-800 hover:bg-gray-100 hover:text-[#27481C] p-2 rounded"
               onClick={() => {
                 toggleMobileMenu();
@@ -220,7 +220,7 @@ function Navbar() {
             transition={{ delay: 0.2, duration: 0.2 }}
           >
             <a
-              href="#"
+              href="/marketplace"
               className="text-gray-800 hover:bg-gray-100 hover:text-[#27481C] p-2 rounded"
               onClick={() => {
                 toggleMobileMenu();

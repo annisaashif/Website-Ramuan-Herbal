@@ -3,12 +3,12 @@ import { useState } from 'react';
 import Footer from '../components/footer';
 import Navbar from "../components/Navbar";
 import Logo from "../assets/logo-detail-kategori.png";
-import kemangi from "../assets/kategori-batang/kemangi.png";
-import kayu_manis from "../assets/kategori-batang/kayu_manis.png";
-import serai from "../assets/kategori-batang/serai.png";
-import soka from "../assets/kategori-batang/soka.png";
-import bambu from "../assets/kategori-batang/bambu.png";
-import ceri from "../assets/kategori-batang/ceri.png";
+import kemangi from "../assets/tanaman/kemangi.png";
+import kayu_manis from "../assets/tanaman/kayu_manis.png";
+import serai from "../assets/tanaman/serai.png";
+import soka from "../assets/tanaman/soka.png";
+import bambu from "../assets/tanaman/bambu.png";
+import ceri from "../assets/tanaman/ceri.png";
 
 const plantImages = {
   'Kemangi': kemangi,

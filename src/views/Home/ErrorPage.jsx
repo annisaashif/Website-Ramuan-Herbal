@@ -12,7 +12,7 @@ function ErrorPage() {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="text-center p-6 bg-white shadow-lg rounded-md max-w-lg w-full">
         <h1 className="text-4xl font-semibold text-[#27481C]">
-          Ups! Halaman Tidak Ditemukan😝
+          Ups! Halaman Tidak Ditemukan ☹️
         </h1>
         <p className="text-gray-600 mt-2 mb-6">
           Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.
