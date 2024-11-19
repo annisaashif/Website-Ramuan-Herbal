@@ -9,7 +9,8 @@ import Community from "./views/Community/Community";
 import LoginPage from "./components/Login/LoginPage";
 import SignupPage from "./components/Login/SignupPage";
 import ErrorPage from "./views/Home/ErrorPage";
-// import Profile from "./views/Profile/Profile";
+import Profile from "./components/Profile/ProfilePage";
+import ChangePasswordPage from "./components/Profile/ChangePasswordPage"; // Import the Change Password Page
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/Login" element={<LoginPage />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/change-password" element={<ChangePasswordPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/Community" element={<Community />} />
         <Route path="/Kategori" element={<Kategori />} />
