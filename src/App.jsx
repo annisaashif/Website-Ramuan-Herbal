@@ -8,8 +8,11 @@ import IdentifikasiPenyakit from "./ResepRamuan/IdentifikasiPenyakit";
 import Community from "./views/Community/Community";
 import LoginPage from "./components/Login/LoginPage";
 import SignupPage from "./components/Login/SignupPage";
+import Logout from "./components/Login/LogoutPage";
 import ErrorPage from "./views/Home/ErrorPage";
 import Profile from "./components/Profile/ProfilePage";
+import Cart from "./components/Profile/CartPage";
+import SavedCatalog from "./components/Profile/SavedCatalogPage";
 import ChangePasswordPage from "./components/Profile/ChangePasswordPage"; // Import the Change Password Page
 
 function App() {
@@ -19,7 +22,10 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/Login" element={<LoginPage />} />
+        <Route path="/Logout" element={<Logout />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/saved-catalog" element={<SavedCatalog />} />
         <Route path="/change-password" element={<ChangePasswordPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/Community" element={<Community />} />

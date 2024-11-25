@@ -43,18 +43,6 @@ function Sidebar() {
         </li>
         <li className="mb-4">
           <NavLink
-            to="/account" // Assuming you have an account route
-            className={({ isActive }) =>
-              isActive
-                ? "flex items-center text-gray-700 bg-gray-200 p-2 rounded"
-                : "flex items-center text-gray-700 hover:bg-gray-100 p-2 rounded"
-            }
-          >
-            <span className="mr-2">Akun</span>
-          </NavLink>
-        </li>
-        <li className="mb-4">
-          <NavLink
             to="/change-password"
             className={({ isActive }) =>
               isActive

@@ -3,18 +3,25 @@ import React, { useState } from "react";
 import { State, City } from "country-state-city";
 import Sidebar from "./sidebar";
 import profileImage from "../../assets/profil.png";
+import Navbar from "../Navbar";
 
 function Profile() {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [kodePos, setKodePos] = useState("");
   const countryIsoCode = "ID";
+
+  // Simulasi email akun yang sedang login
+  const emailAkun = "auliaayunmufidah@gmail.com";
+
   const handleStateChange = (e) => {
     setSelectedState(e.target.value);
     setSelectedCity("");
   };
+
   return (
     <>
+      <Navbar />
       <div className="flex justify-center items-start min-h-screen m-4 py-10">
         {/* sidebar */}
         <Sidebar />
@@ -27,7 +34,7 @@ function Profile() {
               alt="Profile picture of a person"
               className="w-24 h-24 rounded-full mr-4"
             />
-            <button className="bg-green-700 text-white px-4 py-2 rounded">
+            <button className="bg-[#27481C] text-white px-4 py-2 rounded">
               Ganti Foto
             </button>
           </div>
@@ -51,7 +58,9 @@ function Profile() {
             <label className="block text-gray-700 mb-2">Email</label>
             <input
               type="email"
+              value={emailAkun}
               className="w-full border border-gray-300 rounded px-3 py-2"
+              disabled
             />
           </div>
           <div className="mb-4">
@@ -119,10 +128,24 @@ function Profile() {
           <div className="flex justify-end mt-auto">
             <button
               type="submit"
-              className="bg-green-700 text-white rounded py-2 px-4 hover:bg-green-800"
+              className="bg-[#27481C] text-white rounded-lg py-2 px-4 hover:bg-[#203a17]"
             >
               simpan{" "}
             </button>
+          </div>
+          {/* Menampilkan informasi email akun yang sedang login di bawah */}
+          <div className="mt-6 bg-[#E9EDE8] p-4 flex items-center">
+            <img
+              src={profileImage}
+              alt="Profile"
+              className="w-12 h-12 rounded-full mr-4" // Ukuran dan gaya gambar
+            />
+            <div>
+              <p className="text-gray-700">
+                <strong>Email Akun:</strong>
+              </p>
+              <p className="text-gray-800">{emailAkun}</p>
+            </div>
           </div>
         </div>
       </div>

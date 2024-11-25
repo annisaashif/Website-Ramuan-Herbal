@@ -24,7 +24,7 @@ export default Homepage;
 
 function MainPage() {
   return (
-    <main className="bg-gray-100">
+    <main className="bg-gray-100 ">
       <section className="hero flex flex-col md:flex-row items-center justify-center py-12 px-10 space-y-10 md:space-y-0 md:space-x-10">
         <div className="hero-content text-center md:text-left ">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

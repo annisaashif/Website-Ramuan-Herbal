@@ -25,6 +25,29 @@ function CenterModeCarousel() {
     ],
   };
 
+  const carouselData = [
+    {
+      imgSrc: centerMode,
+      title: "Obat Tradisional Aman Tanpa Bahan Kimia Obat",
+      description: "Hotel Garden Palace, Sanggau pada Rabu, 28 Februari 2024",
+    },
+    {
+      imgSrc: centerMode,
+      title: "Herbal Product 2",
+      description: "Info terkini tentang produk herbal terbaik.",
+    },
+    {
+      imgSrc: centerMode,
+      title: "Herbal Product 3",
+      description: "Manfaat herbal untuk kesehatan tubuh.",
+    },
+    {
+      imgSrc: centerMode,
+      title: "Herbal Product 4",
+      description: "Inovasi baru dalam pengobatan herbal.",
+    },
+  ];
+
   return (
     <div className="carousel-container py-10">
       <h2 className="text-2xl text-[#27481C] text-center font-bold mb-6">
@@ -35,27 +58,22 @@ function CenterModeCarousel() {
         tumbuhan tradisional untuk gaya hidup sehat
       </p>
       <Slider {...settings}>
-        <div className="carousel-item">
-          <img src={centerMode} alt="Product 1" className="carousel-image" />
-          <h5>Obat Tradisional Aman Tanpa Bahan Kimia Obat</h5>
-          <p>Hotel Garden Palace, Sanggau pada Rabu, 28 Februari 2024</p>
-        </div>
-        <div className="carousel-item">
-          <img src={centerMode} alt="Product 2" className="carousel-image" />
-          <h5>Herbal Product 2</h5>
-          <p>Herbal Product 2</p>
-        </div>
-        <div className="carousel-item">
-          <img src={centerMode} alt="Product 3" className="carousel-image" />
-          <h5>Herbal Product 3</h5>
-          <p>Herbal Product 3</p>
-        </div>
-        <div className="carousel-item">
-          <img src={centerMode} alt="Product 4" className="carousel-image" />
-          <h5>Herbal Product 4</h5>
-          <p>Herbal Product 4</p>
-        </div>
+        {carouselData.map((item, index) => (
+          <div className="carousel-item" key={index}>
+            <img
+              src={item.imgSrc}
+              alt={`Product ${index + 1}`}
+              className="carousel-image"
+            />
+            <h5>{item.title}</h5>
+            <p>{item.description}</p>
+          </div>
+        ))}
       </Slider>
+      {/* Tombol Selengkapnya */}
+      <div className="text-center mt-6">
+        <button className="btn-selengkapnya">Selengkapnya</button>
+      </div>
     </div>
   );
 }
