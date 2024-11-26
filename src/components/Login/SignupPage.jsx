@@ -40,7 +40,7 @@ function SignUpPage() {
       return;
     }
 
-    const newUser = { email, password }; // Store the email, not username
+    const newUser = { email, password };
 
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));

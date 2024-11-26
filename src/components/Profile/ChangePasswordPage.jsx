@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import Sidebar from "./sidebar";
+import Navbar from "../Navbar";
 
 function ChangePasswordPage() {
   const [currentPassword, setCurrentPassword] = useState("");
@@ -18,6 +19,7 @@ function ChangePasswordPage() {
 
   return (
     <>
+      <Navbar />
       <div className="flex justify-center items-start min-h-screen m-4 py-10">
         <Sidebar />
         <div className="w-3/4 bg-white rounded-lg shadow-md p-8 ml-6">

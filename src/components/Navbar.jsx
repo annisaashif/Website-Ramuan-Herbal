@@ -160,7 +160,7 @@ function Navbar() {
         initial={{ x: "-100%" }}
         animate={{ x: mobileMenuOpen ? 0 : "-100%" }}
         exit={{ x: "-100%" }}
-        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+        transition={{ duration: 0.1, type: "spring", stiffness: 100 }}
       >
         <button
           onClick={toggleMobileMenu}
