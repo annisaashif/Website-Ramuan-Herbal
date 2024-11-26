@@ -1,19 +1,20 @@
-import headerImage from '../assets/lg-header.png';
+import headerImage from "../assets/lg-header.png";
 import Logo2 from "../assets/logo2.png";
 
 function Header() {
   return (
     <>
       <div
-        className="relative" 
-        style={{ height: '450px', // Mengatur tinggi menjadi 300 piksel
+        className="relative"
+        style={{
+          height: "450px", // Mengatur tinggi menjadi 300 piksel
           backgroundImage: `url(${headerImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center' }}
-        >
-
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <div className="relative z-9 flex flex-col items-center justify-center h-full text-center text-white px-4">
           <div className="mb-4">
             {/* Bagian logo di atas tulisan */}
             <img

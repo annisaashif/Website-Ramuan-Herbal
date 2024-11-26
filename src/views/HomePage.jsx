@@ -1,12 +1,16 @@
 import "./Home/Home.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 import SearchInput from "./Home/SearchInput";
+import CenterModeCarousel from "../components/CenterModeCarousel.jsx";
+import CenterMode from "../components/CenterMode.jsx";
 import Image1 from "../assets/HomeImg/image.png";
 import video1 from "../assets/homevid.mp4";
 import Image2 from "../assets/HomeImg/image (1).png";
 import Image3 from "../assets/HomeImg/image (2).png";
 import Image4 from "../assets/HomeImg/image (3).png";
 import TopPopuler from "./Home/TopPopuler.jsx";
+import TopArticle from "./Home/TopArticle.jsx";
 
 function Homepage() {
   return (
@@ -20,8 +24,8 @@ export default Homepage;
 
 function MainPage() {
   return (
-    <main className="bg-gray-100  min-h-screen">
-      <section className="hero flex flex-col md:flex-row items-center justify-center py-20 px-10 space-y-10 md:space-y-0 md:space-x-10">
+    <main className="bg-gray-100">
+      <section className="hero flex flex-col md:flex-row items-center justify-center py-12 px-10 space-y-10 md:space-y-0 md:space-x-10">
         <div className="hero-content text-center md:text-left ">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Jelajahi dan temukan rahasia
@@ -43,7 +47,7 @@ function MainPage() {
           <img src={Image4} alt="Image 4" className="rounded-md" />
         </div>
       </section>
-      <section className="about flex flex-col md:flex-row items-center justify-center py-20 px-10 space-y-10 md:space-y-0 md:space-x-10">
+      <section className="about flex flex-col md:flex-row items-center justify-center py-2 px-10 space-y-10 md:space-y-0 md:space-x-10">
         <div className="video-container relative flex-shrink-0 p-2">
           <div className="absolute top-0 left-0 w-20 h-2 bg-[#27481C] z-20"></div>
           <div className="absolute top-0 left-0 w-2 h-20 bg-[#27481C] z-20"></div>
@@ -78,95 +82,10 @@ function MainPage() {
       </section>
 
       <TopPopuler />
-
-      <section>
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mt-10">Artikel Edukasi</h2>
-          <p className="text-gray-600 mt-2">
-            Membantu Anda memperluas wawasan tentang manfaat herbal, teknik
-            meramu, dan gaya hidup sehat alami
-          </p>
-        </div>
-        <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Card 1 */}
-          <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
-            <img
-              src="https://placehold.co/250x250"
-              alt="Cover buku 100 Top Tanaman Obat"
-              className="rounded-md w-[250px] h-[250px]"
-            />
-            <h3 className="text-lg font-bold mt-4 text-center">
-              100 Top Tanaman Obat
-            </h3>
-            <p className=" text-gray-600 mt-2 text-sm text-center overflow-wrap break-word flex-grow">
-              Sumber daya yang lengkap bagi siapapun yang ingin mengeksplorasi
-              dunia pengobatan herbal dan menggunakannya praktis di dalam
-              kehidupan sehari-hari.
-            </p>
-            <button className="bg-[#27481C] text-white py-2 px-4 rounded-md mt-4 self-start">
-              Baca Artikel
-            </button>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
-            <img
-              src="https://placehold.co/250x250"
-              alt="Cover buku Vademekum Tanaman Obat"
-              className="rounded-md w-[250px] h-[250px]"
-            />
-            <h3 className="text-lg font-bold mt-4 text-center">
-              Vademekum Tanaman Obat
-            </h3>
-            <p className="text-gray-600 mt-2 text-sm text-center overflow-wrap break-word flex-grow">
-              Panduan ini adalah pegangan yang berisi informasi tentang berbagai
-              tanaman obat, khasiatnya, cara penggunaannya, manfaatnya, dan cara
-              meramunya.
-            </p>
-            <button className="bg-[#27481C] text-white py-2 px-4 rounded-md mt-4 self-start">
-              Baca Artikel
-            </button>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
-            <img
-              src="https://placehold.co/250x250"
-              alt="Cover buku Formularium Ramuan Obat"
-              className="rounded-md w-[250px] h-[250px]"
-            />
-            <h3 className="text-lg font-bold mt-4 text-center">
-              Formularium Ramuan Obat
-            </h3>
-            <p className="text-gray-600 mt-2 text-sm text-center overflow-wrap break-word flex-grow">
-              Sumber pengetahuan dan praktik bagi siapa saja yang tertarik pada
-              pengobatan herbal dan cara meramunya.
-            </p>
-            <button className="bg-[#27481C] text-white py-2 px-4 rounded-md mt-4 self-start">
-              Baca Artikel
-            </button>
-          </div>
-
-          {/* Card 4 */}
-          <div className="bg-white rounded-md shadow-md p-4 w-[293px] min-h-[410px] mx-auto flex flex-col overflow-hidden">
-            <img
-              src="https://placehold.co/250x250"
-              alt="Cover buku Acuan Bahan Baku Obat"
-              className="rounded-md w-[250px] h-[250px]"
-            />
-            <h3 className="text-lg font-bold mt-4 text-center">
-              Acuan Bahan Baku Obat
-            </h3>
-            <p className="text-gray-600 mt-2 text-sm text-center overflow-wrap break-word flex-grow">
-              Pedoman yang digunakan untuk menentukan kualitas, keamanan, dan
-              efektivitas bahan baku dalam pembuatan obat.
-            </p>
-            <button className="bg-[#27481C] text-white py-2 px-4 rounded-md mt-4 self-start">
-              Baca Artikel
-            </button>
-          </div>
-        </div>
-      </section>
+      <TopArticle />
+      <CenterModeCarousel />
+      <CenterMode />
+      <Footer />
     </main>
   );
 }
