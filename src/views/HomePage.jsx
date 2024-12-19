@@ -40,11 +40,27 @@ function MainPage() {
           </p>
           <SearchInput />
         </div>
-        <div className="hero-images grid grid-cols-2 gap-4 mt-10 md:mt-0">
-          <img src={Image1} alt="Image 1" className="rounded-md" />
-          <img src={Image2} alt="Image 2" className="rounded-md" />
-          <img src={Image3} alt="Image 3" className="rounded-md" />
-          <img src={Image4} alt="Image 4" className="rounded-md" />
+        <div className="hero-images grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-0">
+          <img
+            src={Image1}
+            alt="Image 1"
+            className="rounded-md w-full h-auto"
+          />
+          <img
+            src={Image2}
+            alt="Image 2"
+            className="rounded-md w-full h-auto"
+          />
+          <img
+            src={Image3}
+            alt="Image 3"
+            className="rounded-md w-full h-auto"
+          />
+          <img
+            src={Image4}
+            alt="Image 4"
+            className="rounded-md w-full h-auto"
+          />
         </div>
       </section>
       <section className="about flex flex-col md:flex-row items-center justify-center py-2 px-10 space-y-10 md:space-y-0 md:space-x-10">
@@ -62,7 +78,7 @@ function MainPage() {
         </div>
 
         <div className="about-content text-center md:text-left">
-          <h2 className="text-2xl font-bold text-green-900 mb-4">
+          <h2 className="text-2xl font-bold text-[#27481C] mb-4">
             Cerita Singkat Tentang Ramuan Tradisional
           </h2>
           <p className="mt-4 text-gray-700 mb-6">
