@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import pernapasan from "../assets/kategori-penyakit/pernapasan2.png";
 import pencernaan from "../assets/detail-penyakit/pencernaan.png";

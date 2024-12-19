@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"; // Mengambil parameter dari URL
 import Navbar from "../components/Navbar";
 import { FaArrowLeft } from "react-icons/fa";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Logo from "../assets/logo-detail-kategori.png";
 import kayu_manis from "../assets/tanaman/kayu_manis.png";
 import jahe from "../assets/tanaman/jahe.png";

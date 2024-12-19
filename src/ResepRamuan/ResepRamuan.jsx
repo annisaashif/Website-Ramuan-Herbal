@@ -2,7 +2,7 @@
 // import { useState } from 'react';
 import headerImage from "../assets/lg-header.png";
 import { Link } from "react-router-dom";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Logo2 from "../assets/logo2.png";
 import ResepTerpopuler from "./ResepTerpopuler";
