@@ -32,7 +32,7 @@ const Kategori = () => {
       <Navbar />
       <Header />
 
-      <div className="container mx-auto py-10 min-h-screen">
+      <div className="container mx-auto py-10">
         <h1 className="text-3xl font-bold text-center text-green-800 mb-8">
           Kategori Tanaman Herbal
         </h1>
@@ -48,7 +48,9 @@ const Kategori = () => {
                 alt={`Image of ${category.name}`}
                 className="w-full h-40 object-cover"
               />
-              <div className="p-2 text-black text-center">{category.name}</div>
+              <div className="p-2 bg-[#27481c] text-white text-center">
+                {category.name}
+              </div>
             </Link>
           ))}
         </div>

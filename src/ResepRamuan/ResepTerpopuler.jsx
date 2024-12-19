@@ -9,9 +9,6 @@ import kolestrol from "../assets/penyakit/kolestrol.png";
 import kulit from "../assets/penyakit/kulit.png";
 import malaria from "../assets/penyakit/malaria.png";
 
-
-
-
 const ResepTerpopuler = () => {
   const items = [
     { title: "Flu dan Batuk", img: flu_batuk },
@@ -23,25 +20,33 @@ const ResepTerpopuler = () => {
     { title: "Infeksi Saluran Kemih", img: infeksi },
     { title: "Penyakit Kulit", img: kulit },
     { title: "Diabetes", img: diabetes },
-    { title: "Malaria", img: malaria }
+    { title: "Malaria", img: malaria },
   ];
 
   return (
     <>
-      <div className="container mx-auto p-4 mt-8 mb-20">
-  <h1 className="text-2xl font-bold text-center text-green-800 mb-6">Resep Terpopuler</h1>
-  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-    {items.map((item, index) => (
-      <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src={item.img} alt={item.title} className="w-full h-40 object-cover" />
-        <div className="p-2 bg-green-800 text-white text-center">
-          <p>{item.title}</p>
+      <div className="container mx-auto p-4 mt-6 mb-10">
+        <h1 className="text-2xl font-bold text-center text-green-800 mb-6">
+          Resep Terpopuler
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-full h-36 object-cover"
+              />
+              <div className="p-3 bg-[#27481c] text-white text-center">
+                <p className="text-base font-semibold">{item.title}</p>{" "}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
-
     </>
   );
 };

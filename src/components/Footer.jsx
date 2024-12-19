@@ -1,11 +1,25 @@
-function footer() {
-  return (
-    <div>
-      <footer className="bg-[#27481C] text-white text-center py-2">
-        © 2024 Ramuan Tradisional. All Rights Reserved
-      </footer>
-    </div>
-  );
-}
+// components/Footer.js
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 
-export default footer;
+const Footer = () => {
+  return (
+    <footer className="bg-[#27481c] text-white text-center p-4">
+      <p>&copy; 2023 Herbal Remedies. All Rights Reserved.</p>
+      <p>Follow us on:</p>
+      <div>
+        <a href="#" className="text-white mx-2">
+          Facebook
+        </a>
+        <a href="#" className="text-white mx-2">
+          Instagram
+        </a>
+        <a href="#" className="text-white mx-2">
+          Twitter
+        </a>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

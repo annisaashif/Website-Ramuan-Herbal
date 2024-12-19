@@ -5,6 +5,7 @@ import DetailKategori from "./KatalogTanaman/DetailKategori";
 import TanamanDetail from "./KatalogTanaman/TanamanDetail";
 import ResepTerpopuler from "./ResepRamuan/ResepRamuan";
 import IdentifikasiPenyakit from "./ResepRamuan/IdentifikasiPenyakit";
+import IdentifikasiResep from "./ResepRamuan/IdentifikasiResep";
 import Community from "./views/Community/Community";
 import LoginPage from "./components/Login/LoginPage";
 import SignupPage from "./components/Login/SignupPage";
@@ -34,6 +35,8 @@ function App() {
         <Route path="/tanaman/:name" element={<TanamanDetail />} />
         <Route path="/resep-ramuan" element={<ResepTerpopuler />} />
         <Route path="/resepramuan/:id" element={<IdentifikasiPenyakit />} />
+        <Route path="/IdentifikasiResep" element={<IdentifikasiResep />} />
+        <Route path="/penyakit/:name" element={<IdentifikasiResep />} />
       </Routes>
     </Router>
   );

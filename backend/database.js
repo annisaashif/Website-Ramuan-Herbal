@@ -1,4 +1,3 @@
-// db.js
 import mysql from "mysql2";
 
 // Membuat koneksi ke database MySQL
