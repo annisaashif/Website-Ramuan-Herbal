@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { State, City } from "country-state-city";
 import Sidebar from "../Sidebar";
-import profileImage from "../../assets/profil.png";
+import profileImage from "../../assets/Profil.png";
 import Navbar from "../Navbar";
 
 function Profile() {
