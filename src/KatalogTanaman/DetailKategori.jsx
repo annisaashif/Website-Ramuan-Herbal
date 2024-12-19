@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Logo from "../assets/logo-detail-kategori.png";
 import kayu_manis from "../assets/tanaman/kayu_manis.png";

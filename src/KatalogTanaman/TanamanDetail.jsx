@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Logo from "../assets/logo-detail-kategori.png";
 import kemangi from "../assets/tanaman/kemangi.png";
