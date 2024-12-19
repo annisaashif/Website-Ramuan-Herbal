@@ -1,6 +1,6 @@
 import "./Home/Home.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer";
+import Footer from "../components/Footer.jsx";
 import SearchInput from "./Home/SearchInput";
 import CenterModeCarousel from "../components/CenterModeCarousel.jsx";
 import CenterMode from "../components/CenterMode.jsx";

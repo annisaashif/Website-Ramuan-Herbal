@@ -11,7 +11,7 @@ import umbi_umbian from "../assets/kategori-tanaman/umbi_umbian.png";
 import tunas_dan_pucuk from "../assets/kategori-tanaman/tunas_dan_pucuk.png";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 const categories = [
   { id: 1, name: "Akar", image: akar },
