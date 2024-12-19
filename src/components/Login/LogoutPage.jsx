@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Menggunakan useNavigate
-import Sidebar from "../Profile/sidebar";
+import Sidebar from "../Sidebar";
 import Navbar from "../Navbar";
 
 function Logout() {

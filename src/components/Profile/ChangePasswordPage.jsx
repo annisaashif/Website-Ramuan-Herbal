@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import Sidebar from "./sidebar";
+import Sidebar from "../Sidebar";
 import Navbar from "../Navbar";
 
 function ChangePasswordPage() {

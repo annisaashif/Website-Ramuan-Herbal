@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { State, City } from "country-state-city";
-import Sidebar from "./sidebar";
+import Sidebar from "../Sidebar";
 import profileImage from "../../assets/profil.png";
 import Navbar from "../Navbar";
 
