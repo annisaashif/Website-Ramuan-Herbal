@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 import userprof from "../../assets/Community/userprofile.png";
 import userprof1 from "../../assets/Community/userprofile2.png";
 import userprof2 from "../../assets/Community/userprofile3.png";
