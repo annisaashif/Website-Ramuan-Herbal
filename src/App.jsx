@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Kategori from "./KatalogTanaman/Kategori";
-import Homepage from "./views/Homepage";
+import Homepage from "./views/HomePage";
 import DetailKategori from "./KatalogTanaman/DetailKategori";
 import TanamanDetail from "./KatalogTanaman/TanamanDetail";
 import ResepTerpopuler from "./ResepRamuan/ResepRamuan";

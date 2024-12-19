@@ -12,7 +12,7 @@ import Image4 from "../assets/HomeImg/image (3).png";
 import TopPopuler from "./Home/TopPopuler.jsx";
 import TopArticle from "./Home/TopArticle.jsx";
 
-function Homepage() {
+function HomePage() {
   return (
     <>
       <Navbar />
@@ -20,7 +20,7 @@ function Homepage() {
     </>
   );
 }
-export default Homepage;
+export default HomePage;
 
 function MainPage() {
   return (
